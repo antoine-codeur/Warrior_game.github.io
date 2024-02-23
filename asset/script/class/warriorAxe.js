@@ -11,7 +11,7 @@ class WarriorAxe extends Warrior {
     power /= 2;
     console.log(`${this.name} attaque ${opponent.name} avec une puissance de ${power}. Le coup n'est pas très efficace!`);
     } else {
-    console.log(`${this.name} attaque ${opponent.name} avec une puissance de ${this.attackPower}`);
+    console.log(`${this.name} attaque ${opponent.name} avec une puissance de ${power}`);
     }
     opponent.takeDamage(power);
 }
