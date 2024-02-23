@@ -1,11 +1,7 @@
 // // Création de deux guerriers
 console.log("Début du combat !");
-let warrior1 = new WarriorAxe("Joan", 100, 10); // Nom, Santé, Puissance d'attaque
-let warrior2 = new WarriorSword("Leon", 100, 10);
-
-// const axeWarrior = new WarriorAxe("Axel", 100, 10);
-// const swordWarrior = new WarriorSword("Swordy", 100, 10);
-// const spearWarrior = new WarriorSpear("Spearson", 100, 10);
+let warrior1 = new WarriorBow("Joan", 100, 20); // Nom, Santé, Puissance d'attaque
+let warrior2 = new WarriorSword("Leon", 100, 20);
 
 // Boucle de combat
 while (warrior1.isAlive() && warrior2.isAlive()) {
