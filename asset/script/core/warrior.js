@@ -3,7 +3,6 @@ class Warrior {
     this.name = name;
     this.health = health;
     this.attackPower = attackPower;
-    this.type = this.constructor.name;
   }
 
   attack(opponent) {
