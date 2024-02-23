@@ -3,6 +3,7 @@ class Warrior {
     this.name = name;
     this.health = health;
     this.attackPower = attackPower;
+    this.type = this.constructor.name;
   }
 
   attack(opponent) {
@@ -13,16 +14,15 @@ class Warrior {
   takeDamage(damage) {
     this.health -= damage;
     if (this.health < 0) {
-        this.health = 0; // Assure que la santé ne devient pas négative
+      this.health = 0;
     }
     console.log(`${this.name} a maintenant ${this.health} points de vie.`);
-}
+  }
 
   isAlive() {
     return this.health > 0;
   }
 }
-
 // PHASE DE TEST
 // let warrior1 = new Warrior("Joan", 100, 10);
 // let warrior2 = new Warrior("Leon", 90, 15);
