@@ -1,5 +1,5 @@
 class WarriorBow extends Warrior {
-    constructor(name, health, attackPower, criticalChance, dodgeChance) {
+    constructor(name, health, attackPower) {
         super(name, health, attackPower, 0.25, 0.1);
     }
   
